@@ -18,8 +18,8 @@ public class Prog_6
 	{
 		return new Object[][]
 				{
-			{"qqqweqwe","1233221"},
-			{"yqqqwieuy","2312223"}
+			{"qqqweqqwe","1233221"},
+			{"yqqqwiequy","2312223"}
 			
 				};
 	}
