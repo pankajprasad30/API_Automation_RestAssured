@@ -1,0 +1,24 @@
+package excel_Integration;
+
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import constants_Path.Constants_Path;
+
+public class Create_User_Excel {
+
+	public static void main(String[] args) throws IOException 
+	{
+		FetchData_Excel obj=new FetchData_Excel(Constants_Path.ExcelPath, Constants_Path.SheetName);
+		
+		Map<String, Object> mp=new LinkedHashMap<String, Object>();
+		mp.put("FirstName",FetchData_Excel.getTestData(1,0) );
+		
+		System.out.println(mp);
+		
+		
+
+	}
+
+}

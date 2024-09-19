@@ -1,0 +1,7 @@
+
+Feature: Login into web application.
+Scenario: Launch application and login with valid credentials.
+
+Given Website is launch and user navigated to application.
+When User enter UserName and Password
+Then User click on login button.

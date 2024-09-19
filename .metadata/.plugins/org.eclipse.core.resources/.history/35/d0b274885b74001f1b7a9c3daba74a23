@@ -1,0 +1,30 @@
+package stepDefination;
+
+public class Step_Defination 
+{
+	@Given("User is requested to hit on application URL.")
+	public void user_is_requested_to_hit_on_application_url() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("User will pass the payload with all required details.")
+	public void user_will_pass_the_payload_with_all_required_details() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("The user will hit the specific {string}.")
+	public void the_user_will_hit_the_specific(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("We will validate the response body along with {string}.")
+	public void we_will_validate_the_response_body_along_with(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

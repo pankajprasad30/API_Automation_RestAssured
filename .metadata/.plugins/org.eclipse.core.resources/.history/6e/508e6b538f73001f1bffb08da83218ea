@@ -1,0 +1,10 @@
+package dataBase_Connection;
+
+public class SQL_Querry {
+
+	public static String SQL_Querry1()
+	{
+		
+	}
+
+}

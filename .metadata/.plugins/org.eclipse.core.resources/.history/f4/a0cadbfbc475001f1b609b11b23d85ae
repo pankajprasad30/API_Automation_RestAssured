@@ -1,0 +1,22 @@
+package utilities;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import constants.Constants_Variable;
+
+
+
+public class FetchData_Properties 
+{
+	static FileReader reader;
+	public static Properties readData_Property() throws IOException
+	{
+		reader=new FileReader(Constants_Variable.PROPERTY_FILE_PATH);
+		Properties prop=new Properties();
+		prop.load(reader);
+		return prop;
+	}
+
+}

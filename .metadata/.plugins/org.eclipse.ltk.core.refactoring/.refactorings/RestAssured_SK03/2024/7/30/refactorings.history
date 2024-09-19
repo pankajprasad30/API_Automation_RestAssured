@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;RestAssured_SK03&apos;&#x0D;&#x0A;- Original project: &apos;RestAssured_SK03&apos;&#x0D;&#x0A;- Original element: &apos;RestAssured_SK03/src/test/java/RestAssured_SK03.RestAssured_SK03&apos;" description="Delete element" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;RestAssured_SK03.RestAssured_SK03" element2="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;RestAssured_SK03" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1721942223973" subPackages="false" version="1.0"/>
+</session>

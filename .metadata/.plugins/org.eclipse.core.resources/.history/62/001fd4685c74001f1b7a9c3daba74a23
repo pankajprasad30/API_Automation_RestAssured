@@ -1,0 +1,10 @@
+package utilities;
+
+public class FetchData_Properties 
+{
+	public static Properties readData_Property()
+	{
+		
+	}
+
+}

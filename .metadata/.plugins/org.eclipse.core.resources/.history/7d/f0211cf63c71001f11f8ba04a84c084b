@@ -1,0 +1,15 @@
+package pOJO_Example;
+
+public class New_Employee {
+
+	public static void main(String[] args) 
+	{
+		Employee_POJO emp=new Employee_POJO();
+		emp.setName("Pankaj");
+		emp.setJob("QA_Lead");
+		emp.setSalary(150000.76);
+		emp.setLocation("Bangalore");
+
+	}
+
+}

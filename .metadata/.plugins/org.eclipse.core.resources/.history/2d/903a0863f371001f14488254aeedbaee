@@ -1,0 +1,10 @@
+package complex_JSON;
+
+public class Parent_POJO 
+{
+	private String name;
+	private String job;
+	private int salary;
+	private String location;
+
+}

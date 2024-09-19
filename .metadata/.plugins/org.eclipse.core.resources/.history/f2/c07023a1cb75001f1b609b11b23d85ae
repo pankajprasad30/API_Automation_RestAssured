@@ -1,0 +1,11 @@
+package pojoMapper;
+
+public class CreateUser 
+{
+	public static Object createUser()
+	{
+		CreateUserPOJO emp=new CreateUserPOJO();
+		
+	}
+
+}

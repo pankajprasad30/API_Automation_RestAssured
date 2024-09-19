@@ -1,0 +1,11 @@
+package pOJO_Example;
+
+public class Employee_POJO 
+{
+
+		private String name;
+		private String job;
+		private double salary;
+		private String location;
+
+}

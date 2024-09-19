@@ -1,0 +1,6 @@
+Feature: Validate login funcationality of amazon website.
+Scenario Outline: validate loin with correct credentials.
+
+Given Launch the amazon website in we browser.
+When User user enters "<UserName>" and "<Password>".
+Then User will be logged into the application.

@@ -1,0 +1,10 @@
+package complex_JSON;
+
+public class Child_POJO 
+{
+	private String street;
+    private String city;
+    private int pincode;
+    private String state;
+
+}

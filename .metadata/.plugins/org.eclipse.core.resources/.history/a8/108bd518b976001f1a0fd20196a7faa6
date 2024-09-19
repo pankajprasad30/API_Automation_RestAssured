@@ -1,0 +1,33 @@
+package stepDefination1;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Step_Defination1 
+{
+	@Given("User will launch application URL.")
+	public void user_will_launch_application_url() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("User will send the payload with proper details.")
+	public void user_will_send_the_payload_with_proper_details() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User will hit specific {string}.")
+	public void user_will_hit_specific(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User will validate the response body and {string}.")
+	public void user_will_validate_the_response_body_and(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

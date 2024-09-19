@@ -1,0 +1,11 @@
+package example_JSON_POJO;
+
+public class Emp_POJO 
+{
+	private String name;
+	private String job;
+	private int Salary;
+	private String location;
+	
+
+}

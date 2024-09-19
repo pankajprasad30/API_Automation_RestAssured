@@ -1,0 +1,15 @@
+package dataBase_Connection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CreateUserX {
+
+	public static void main(String[] args) 
+	{
+		Map<String,Object> mp=new HashMap<String,Object>();
+		mp.put("Person ID", SQL_Querry.SQL_Querry(1));
+
+	}
+
+}

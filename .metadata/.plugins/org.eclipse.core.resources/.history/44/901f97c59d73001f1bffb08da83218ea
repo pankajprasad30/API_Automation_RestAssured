@@ -1,0 +1,21 @@
+package excel_Integration;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+public class FetchData_Excel 
+{
+	@Test
+	public void excel_sheet() throws IOException
+	{
+		XSSFWorkbook workbook=new XSSFWorkbook("\\src\\test\\java\\excel_Sheet\\TestData_API.x");
+		XSSFSheet sheet=workbook.getSheet("Sheet1");
+		XSSFCell value=sheet.getRow(1).getCell(0);
+		System.out.println(value);
+	}
+
+}

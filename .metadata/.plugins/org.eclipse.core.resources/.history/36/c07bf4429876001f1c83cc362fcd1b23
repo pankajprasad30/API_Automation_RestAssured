@@ -1,0 +1,59 @@
+package stepDefination;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.Assert;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
+import pojoMapper.CreateUser;
+import utilities.FetchData_Properties;
+
+public class Step_Defination 
+{
+	RequestSpecification req;
+	RequestSpecification resp;
+	ResponseSpecification respon;
+	Response response;
+	String URL_Value= FetchData_Properties.readData_Property().getProperty("baseURI");
+	
+	
+	
+	@Given("User is requested to hit on application URL.")
+	public void user_is_requested_to_hit_on_application_url() {
+		req= new RequestSpecBuilder().setBaseUri(URL_Value).setContentType(ContentType.JSON).build();
+	   
+	}
+
+	@Given("User will pass the payload with all required details.")
+	public void user_will_pass_the_payload_with_all_required_details() {
+		resp=given().log().all().spec(req).body(CreateUser.createUser());
+	    
+	}
+
+	@When("The user will hit the specific {string}.")
+	public void the_user_will_hit_the_specific(String endpoint) {
+		respon=(ResponseSpecification) new ResponseSpecBuilder().expectStatusCode(200).build();
+		response=resp.when().post(endpoint).then().log().all().spec(respon).extract().response();
+	   
+	}
+
+	@Then("We will validate the response body along with {string}.")
+	public void we_will_validate_the_response_body_along_with(String status_code) {
+		String s=status_code;
+		int status_code_1=Integer.parseInt(s);
+		int status_code_2=response.getStatusCode();
+		Assert.assertEquals(status_code_2, status_code_1);
+	  
+	}
+
+
+}

@@ -1,0 +1,7 @@
+package constants_Path;
+
+public class Constants 
+{
+	public static final String ExcelPath="";
+
+}

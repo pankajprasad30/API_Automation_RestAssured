@@ -1,0 +1,27 @@
+package example_JSON_POJO;
+
+public class Employee_POJO 
+{
+	public static void main(String[] args) 
+	{
+		Emp_POJO emp1= new Emp_POJO();
+		emp1.getName("pankaj");
+		emp1.getJob("Manager");
+		emp1.getSalary("150000");
+		emp1.getLocation("Bangalore");
+		
+		Emp_POJO emp2= new Emp_POJO();
+		emp2.getName("Darshika");
+		emp2.getJob("Director");
+		emp2.getSalary("4000000");
+		emp2.getLocation("Assam");
+		
+		Emp_POJO emp3= new Emp_POJO();
+		emp3.getName("Neha");
+		emp3.getJob("CTO");
+		emp3.getSalary("2000000");
+		emp3.getLocation("Varanasi");
+
+	}
+
+}

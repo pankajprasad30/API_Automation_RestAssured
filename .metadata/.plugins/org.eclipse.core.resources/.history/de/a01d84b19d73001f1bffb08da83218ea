@@ -1,0 +1,14 @@
+package excel_Integration;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+public class FetchData_Excel 
+{
+	@Test
+	public void excel_sheet()
+	{
+		XSSFWorkbook workbook=new XSSFWorkbook();
+	}
+
+}

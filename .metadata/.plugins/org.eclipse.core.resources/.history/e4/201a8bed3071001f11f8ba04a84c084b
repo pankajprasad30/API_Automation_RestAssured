@@ -1,0 +1,17 @@
+package request_Response_Specification;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+
+public class Request_Response_Using_SpecBuilder 
+{
+
+	public static void main(String[] args) 
+	{
+		RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://www.reqres.in/")
+				.setContentType(ContentType.JSON).build();
+
+	}
+
+}

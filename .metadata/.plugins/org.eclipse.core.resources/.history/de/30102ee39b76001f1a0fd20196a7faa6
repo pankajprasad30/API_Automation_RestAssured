@@ -1,0 +1,24 @@
+package basics_Post;
+
+import static io.restassured.RestAssured.given;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class Prog_1 {
+
+	public static void main(String[] args) 
+	{
+		RestAssured.baseURI="https://reqres.in/";
+		String response=given().log().all()
+		.when().get("api/users?page=2")
+		.then().log().all().assertThat().statusCode(200).extract().response().asString();
+		
+		System.out.println(response);
+		
+		JsonPath js=new JsonPath(response);
+		System.out.println(js.getString("page"));
+
+	}
+
+}

@@ -1,0 +1,62 @@
+package example_JSON_POJO;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
+public class Employee_POJO 
+{
+	public static void main(String[] args) 
+	{
+		Emp_POJO emp1= new Emp_POJO();
+		emp1.setName("pankaj");
+		emp1.setJob("Manager");
+		emp1.setSalary(200000);
+		emp1.setLocation("Bangalore");
+		
+		Emp_POJO emp2= new Emp_POJO();
+		emp2.setName("Darshika");
+		emp2.setJob("Director");
+		emp2.setSalary(400000);
+		emp2.setLocation("Assam");
+		
+		Emp_POJO emp3= new Emp_POJO();
+		emp3.setName("Neha");
+		emp3.setJob("CTO");
+		emp3.setSalary(200000);
+		emp3.setLocation("Varanasi");
+		
+		List<Emp_POJO> l1=new ArrayList<Emp_POJO>();
+		l1.add(emp1);
+		l1.add(emp2);
+		l1.add(emp3);
+		
+		ObjectMapper obj=new ObjectMapper();
+		String empjson=obj.writerWithDefaultPrettyPrinter().writeValueAsString(l1);
+		
+		RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://httpbin.org/")
+				.setContentType(ContentType.JSON).build();
+		RequestSpecification reqsp=given().log().all().spec(req).body(empjson);
+		
+		ResponseSpecification res=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON)
+				.build();//serialisation
+		
+		Response response=reqsp.when().post("post").then().log().all().spec(res).extract().response();
+		System.out.println(response);
+		
+		String response_in_Sting=response.asString();
+		System.out.println(response_in_Sting);
+
+	}
+
+}

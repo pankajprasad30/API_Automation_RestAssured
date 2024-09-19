@@ -1,0 +1,19 @@
+package utilities;
+
+import java.io.Reader;
+import java.util.Properties;
+
+import io.restassured.internal.support.FileReader;
+
+public class FetchData_Properties 
+{
+	static FileReader reader;
+	public static Properties readData_Property()
+	{
+		reader=new FileReader("src\\main\\java\\GlobalData.Properties");
+		Properties prop=new Properties();
+		prop.load(reader);
+		return prop;
+	}
+
+}

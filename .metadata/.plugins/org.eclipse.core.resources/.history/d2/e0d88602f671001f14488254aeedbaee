@@ -1,0 +1,24 @@
+package complex_JSON;
+
+public class Employee_POJO {
+
+	public static void main(String[] args) 
+	{
+		Child_POJO chd=new Child_POJO();
+		chd.setStreet("631-B,C main");
+		chd.getCity("Bangalore");
+		chd.getPincode(786184);
+		chd
+		
+		
+		Parent_POJO prnt=new Parent_POJO();
+		prnt.setName("Pankaj");
+		prnt.setJob("QA_Lead");
+		prnt.setSalary(125000);
+		prnt.setLocation("Arekhere");
+		prnt.setChild_pojo(null);
+		
+
+	}
+
+}

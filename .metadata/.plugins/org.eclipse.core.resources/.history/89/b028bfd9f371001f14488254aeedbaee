@@ -1,0 +1,14 @@
+package complex_JSON;
+
+public class Employee_POJO {
+
+	public static void main(String[] args) 
+	{
+		Parent_POJO prnt=new Parent_POJO();
+		prnt.setName("Pankaj");
+		prnt.setJob("QA_Lead");
+		prnt.setSalary(125000.65);
+
+	}
+
+}

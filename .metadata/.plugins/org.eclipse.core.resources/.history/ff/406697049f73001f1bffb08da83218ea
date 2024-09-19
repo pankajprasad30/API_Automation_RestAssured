@@ -1,0 +1,8 @@
+package constants_Path;
+
+public class Constants 
+{
+	public static final String ExcelPath="\\src\\test\\java\\excel_Sheet\\TestData_API.xlsx";
+	public static final String SheetName="Sheet1";
+
+}

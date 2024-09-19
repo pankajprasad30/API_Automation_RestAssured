@@ -1,0 +1,17 @@
+package dataBase_Connection;
+
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class CreateUserX {
+
+	public static void main(String[] args) throws SQLException 
+	{
+		Map<String,Object> mp=new HashMap<String,Object>();
+		mp.put("Person ID", DB_Connection.getConnection(1));
+		System.out.println(mp);
+
+	}
+
+}

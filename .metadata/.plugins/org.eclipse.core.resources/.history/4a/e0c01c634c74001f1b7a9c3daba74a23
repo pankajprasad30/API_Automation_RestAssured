@@ -1,0 +1,2 @@
+Feature: Login into an application.
+Scenario: Launch webbrowser and application and login with valid credentials.

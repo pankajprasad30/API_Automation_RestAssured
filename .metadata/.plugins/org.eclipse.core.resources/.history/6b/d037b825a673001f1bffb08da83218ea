@@ -1,0 +1,29 @@
+package cucumberEx;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefinations 
+{
+	@Given("Launch the amazon website in we browser.")
+	public void launch_the_amazon_website_in_we_browser() {
+	    System.out.println(" Precondition Scenario");
+	}
+
+	@When("User user enters UserName and Password.")
+	public void user_user_enters_user_name_and_password() {
+	    System.out.println("Here action need to be written");
+	}
+
+	@Then("User will be logged into the application.")
+	public void user_will_be_logged_into_the_application() {
+	   System.out.println("expected result");
+	}
+	@When("User user enters {string} and {string}.")
+	public void user_user_enters_and(String string, String string2) {
+	    System.out.println();
+	}
+		
+	
+}

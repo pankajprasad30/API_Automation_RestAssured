@@ -1,0 +1,23 @@
+package cucumber_Ex;
+
+public class Step_Definations 
+{
+	@Given("User is launched web browser and navigated to application.")
+	public void user_is_launched_web_browser_and_navigated_to_application() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User enters UserName and Password.")
+	public void user_enters_user_name_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User clicks on login button.")
+	public void user_clicks_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

@@ -1,0 +1,11 @@
+package dataBase_Connection_SQL;
+
+public class SQL_Querry 
+{
+	public static String SelectQuerry()
+	{
+		String str="select * from student.Persons limit 1;";
+		return str;
+	}
+
+}

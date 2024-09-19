@@ -1,0 +1,33 @@
+package request_Response_Specification;
+
+import static io.restassured.RestAssured.given;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import payload_data.Payload_1;
+
+public class Request_Response_Using_SpecBuilder 
+{
+
+	public static void main(String[] args) 
+	{
+		RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://www.reqres.in/")
+				.setContentType(ContentType.JSON).build();
+		
+		RequestSpecification res=given().log().all().spec(req).body(Payload_1.addData("Darshika", "Manager"));
+		
+		ResponseSpecification respec= new ResponseSpecBuilder().expectStatusCode(404)
+				.expectContentType(ContentType.JSON).expectHeader("server", "cloudflare").build();
+		
+		Response response=res.when().post("api/users").then().log().all().spec(respec).extract().response();
+		
+		System.out.println(response);
+				
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package pojoMapper;
+
+public class CreateUser 
+{
+	CreateUserPOJO emp=new CreateUserPOJO();
+	emp.
+
+}

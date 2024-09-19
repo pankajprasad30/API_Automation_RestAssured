@@ -1,0 +1,2 @@
+Feature: Login into an application.
+Scenario: Launh webbrowser and application and login with valid credentials.

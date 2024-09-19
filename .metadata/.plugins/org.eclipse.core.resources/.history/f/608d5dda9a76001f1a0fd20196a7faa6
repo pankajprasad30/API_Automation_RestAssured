@@ -1,0 +1,15 @@
+package basics_Post;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+public class Prog_1 {
+
+	public static void main(String[] args) 
+	{
+		RestAssured.baseURI="https://reqres.in/";
+		given().
+
+	}
+
+}
