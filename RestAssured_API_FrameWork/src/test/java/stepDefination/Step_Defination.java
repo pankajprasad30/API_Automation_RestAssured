@@ -41,7 +41,7 @@ public class Step_Defination
 
 	@When("The user will hit the specific {string}.")
 	public void the_user_will_hit_the_specific(String endpoint) {
-		respon=(ResponseSpecification) new ResponseSpecBuilder().expectStatusCode(200).build();
+		respon= new ResponseSpecBuilder().expectStatusCode(200).build();
 		response=resp.when().post(endpoint).then().log().all().spec(respon).extract().response();
 	   
 	}

@@ -1,0 +1,42 @@
+package utility1;
+
+import java.util.Random;
+
+import com.github.javafaker.Faker;
+
+public class ReUsableMethod 
+{
+	public static String RandomString(int length) {
+	    String alphanumericCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuv";
+	 
+	    StringBuffer randomString = new StringBuffer(length);
+	    Random random = new Random();
+	 
+	    for (int i = 0; i < length; i++) {
+	        int randomIndex = random.nextInt(alphanumericCharacters.length());
+	        char randomChar = alphanumericCharacters.charAt(randomIndex);
+	        randomString.append(randomChar);
+	    }
+	 
+	    return randomString.toString();
+	}
+	
+	public static String RandomEmailAddress(String domain) {
+        String emailAddress = "";
+        // Generate random email address
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        while (emailAddress.length() < 5) {
+            int character = (int) (Math.random() * 26);
+            emailAddress += alphabet.substring(character, character + 1);
+        }
+        emailAddress += Integer.valueOf((int) (Math.random() * 99))
+                .toString();
+        emailAddress += "@" + domain;
+        return emailAddress;
+    }
+	public static String RandomEmail()
+	{
+		Faker f1=new Faker();
+		return f1.internet().emailAddress();
+	}
+}

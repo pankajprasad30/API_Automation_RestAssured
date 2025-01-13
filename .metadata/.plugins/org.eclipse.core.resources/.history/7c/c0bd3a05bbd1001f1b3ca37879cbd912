@@ -1,0 +1,22 @@
+package utility1;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class TestData 
+{
+	public static Map palyLoadData()
+	{
+		Map<String,Object> mp1=new LinkedHashMap<String, Object>();
+		mp1.put("name", "Pankaj");
+		mp1.put("gender", "Male");
+		mp1.put("email", ReUsableMethod.RandomEmail());
+		mp1.put("tatus", "Active");
+		
+		
+		return mp1;
+		
+	}
+	
+
+}

@@ -1,0 +1,6 @@
+extent.reporter.spark.start=true
+extent.reporter.spark.out=target/AutomationReporter.html
+basefolder.name=test-output/SparkReport/Sparkreport.html
+basefolder.datetimepattern=d-mm-yy hh-mm-ss
+systeminfo.user=PankajPrasad
+systeminfo.build=v1.1.1

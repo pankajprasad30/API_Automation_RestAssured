@@ -12,8 +12,8 @@ public class All_DataTypes {
 			double g=55.7614289071648;
 			boolean h=true;
 			char j='j';
-			String k="Pankaj";
-			System.out.println(a+b+c+d+f+g+"  " +j+k);
+//			String k="Pankaj";
+//			System.out.println(a+b+c+d+f+g+"  " +j+k);
 
 	}
 

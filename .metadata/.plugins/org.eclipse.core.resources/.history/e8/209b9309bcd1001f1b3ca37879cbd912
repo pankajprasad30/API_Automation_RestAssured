@@ -1,0 +1,23 @@
+package stepDefination1;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions
+(
+	features="src/test/java/Resource1/"	,
+	glue= {"stepDefination1"},
+	//tags="@smoke",
+	dryRun=false,
+	monochrome=false,
+	
+	plugin= {"pretty","html:target/htmlReport/Report.html"}
+)
+
+public class TestRunner_1 
+{
+
+}

@@ -27,10 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Framework_RestAssured.Framework_RestAssured"/>
 		</list>
 		<list key="groupId">
+			<item value="Framework_RestAssured"/>
 		</list>
 		<list key="artifactId">
+			<item value="Framework_RestAssured"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,10 +49,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="Framework_RestAssured"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Framework_RestAssured"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

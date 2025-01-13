@@ -19,13 +19,19 @@
     <fullyQualifiedTypeName name="constants_Path.Constants_Path"/>
     <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
     <fullyQualifiedTypeName name="io.cucumber.java.After"/>
-    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
     <fullyQualifiedTypeName name="constants.Constants_Variable"/>
     <fullyQualifiedTypeName name="utilities.FetchData_Properties"/>
     <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
     <fullyQualifiedTypeName name="pojoMapper.CreateUser"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
-    <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
     <fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matcher"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="constants1.Constants1"/>
+    <fullyQualifiedTypeName name="utility1.FetchDataFromPropertyFile"/>
+    <fullyQualifiedTypeName name="pojoMapper1.CreateUser1"/>
+    <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+    <fullyQualifiedTypeName name="utility1.TestData"/>
 </qualifiedTypeNameHistroy>
